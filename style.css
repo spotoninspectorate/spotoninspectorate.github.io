@@ -184,8 +184,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #3564b0;
+    font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,cursive;
+    color: #469bdb;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -959,17 +959,36 @@ body {
 */
 .contact-form {
     padding: 10px;
-    width: 50%;
-    float: left;
+    width: 70%;
+    float: right;
 }
 
 .contact-information {
     padding: 10px;
-    width: 50%;
-    float: right;
+    width: 30%;
+    float: left;
 }
 
 .email-link {
     font-size: 18px;
+}
+
+/*
+    Price list
+*/
+.pricelist {
+    font-size: 24px;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 100px;
+}
+
+.pricelist th {
+    text-align: center;
+    color: #f2f2f2;
+    background-color: #777;
+}
+.pricelist tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
