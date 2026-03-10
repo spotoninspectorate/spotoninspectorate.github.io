@@ -12,10 +12,14 @@
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/modern.css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Public+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -45,7 +49,10 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand page-scroll" href="#page-top">Spot-On Inspectorate</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <span style="color: var(--primary-color)">Spot-On</span> <span
+                    style="color: var(--secondary-color)">Inspectorate</span>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,13 +65,18 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About Us</a>
+                        <a class="page-scroll" href="#why-choose-us">Why Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                          <a class="page-scroll" href="#contact"
+                            style="background: var(--secondary-color); color: white !important; border-radius: 4px; margin-left: 15px; padding: 10px 20px !important; margin-top: 5px;">Book
+                            Now</a>
                     </li>
                 </ul>
             </div>
@@ -77,34 +89,16 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Uncovering Defects, Building Trust</div>
-                <div class="intro-heading">Your Trusted Defects Inspection Experts</div>
+                <div class="intro-lead-in">Just collected your keys?</div>
+                <div class="intro-heading">Don't let hidden defects ruin your renovation plans.</div>
 
-                <div class="intro-button"><a href="https://wa.me/6580812300?text=Hello%2C%20I%27m%20interested%20to%20find%20out%20more%21" class="btn btn-xl" target="_blank">WhatsApp us now!</a></div>
-                <div class="intro-button"><a href="#services" class="page-scroll btn btn-xl">Learn More</a></div>
+                <div class="intro-button"><a
+                    href="https://wa.me/6580812300?text=Hello%2C%20I%27m%20interested%20to%20find%20out%20more%21" class="btn btn-xl"
+                    target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp us now!</a></div>
+                <div class="intro-button"><a href="#services" class="page-scroll btn btn-xl">View Services</a></div>
             </div>
         </div>
     </header>
-<!--
-        
-          
-        
-          <a class="page-link" href="/about/">About</a>
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
- -->
-
 
     <!-- Services Section -->
     <section id="services">
@@ -115,7 +109,7 @@
                 </div>
             </div>
             <div class="row text-center big-3">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-check-square-o fa-stack-1x fa-inverse"></i>
@@ -123,7 +117,7 @@
                     <h4 class="service-heading">New Home Defects Inspection</h4>
                     <p class="text-muted">Check for defects before proceeding with renovation works so that the whole renovation process can go smoothly.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
@@ -131,7 +125,7 @@
                     <h4 class="service-heading">Post Renovation Defects Inspection</h4>
                     <p class="text-muted">Ensure that your ID delivers quality workmanship and identify any defects to be rectified.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
@@ -139,38 +133,42 @@
                     <h4 class="service-heading">Renovation Consultation</h4>
                     <p class="text-muted">Get answers to your burning questions during your renovation and help ensure your dream home becomes a reality.</p>
                 </div>
+                <div class="col-md-3">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-wifi fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">HDB WiFi & Networking Consultation</h4>
+                  <p class="text-muted">Overcome dead zones and thick concrete walls with our professional HDB networking & WiFi mesh
+                    consultation.</p>
+                </div>
             </div>
             <div class="row defects-svc">
-                <div class="col-lg-6 text-center">
-                    <h2>Defects Inspection Service</h2>
-                    <p>
-                        Our standard defects inspection service package offers comprehensive coverage across <b>three</b> essential trips.
-                    </p>
-                    <p>With this structured approach, we aim to provide comprehensive coverage and peace of mind throughout the defects inspection process.</p>
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Our 3-Trip Process</h2>
+                  <p class="large text-muted">Comprehensive peace of mind through a structured inspection cycle.</p>
                 </div>
-
-                <div class="col-lg-6 text-left">
-                    <h4>Initial Inspection Trip:</h4>
-                    <ul>
-                        <li>Conducted to identify potential defects within the property.</li>
-                        <li>Meticulously examines all areas of concern.</li>
-                    </ul>
-
-                    <h4>Joint Inspection Trip with BSC/MA:</h4>
-                    <ul>
-                        <li>Facilitates open communication and collaboration.</li>
-                        <li>Allows for discussion and resolution of concerns raised during the initial inspection.</li>
-                    </ul>
-                    <h4>Defects Rectification Inspection Trip:</h4>
-                    <ul>
-                        <li>Ensures that all identified issues have been effectively resolved.</li>
-                    </ul>
-
+            </div>
+            <div class="row inspection-steps">
+              <div class="col-md-4 step-item">
+                <div class="step-number">1</div>
+                <h4>Initial Inspection</h4>
+                <p>Meticulous identify of all potential defects using specialized equipment.</p>
+              </div>
+              <div class="col-md-4 step-item">
+                <div class="step-number">2</div>
+                <h4>Joint Inspection</h4>
+                <p>Meeting with BSC/MA to walk through and confirm all findings.</p>
+              </div>
+              <div class="col-md-4 step-item">
+                <div class="step-number">3</div>
+                <h4>Final Rectification</h4>
+                <p>Verify all defects were properly fixed before you move in.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>HDB Standard Pricelist</h3>
+                    <h3 style="margin-top: 50px;">HDB Pre-Renovation Pricelist</h3>
                     <table class="pricelist">
                         <tr>
                             <th>HDB Size</th>
@@ -203,7 +201,7 @@
                     </table>
                 </div>
                 <div class="col-lg-12 text-center">
-                    <h3>Exec/Condo Standard Pricelist</h3>
+                    <h3 style="margin-top: 50px;">Exec/Condo Pre-Renovation Pricelist</h3>
                     <table class="pricelist">
                         <tr>
                             <th>Floor area</th>
@@ -244,25 +242,63 @@
             </div>
         </div>
     </section>
+<!-- Why Choose Us Section -->
+<section id="why-choose-us" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Why Choose Us?</h2>
+            <h3 class="section-subheading text-muted">Dedicated to protecting your most significant investment.</h3>
+            </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-certificate fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Decades of Expertise</h4>
+                <p class="text-muted">Over 20 years of experience in Singapore's construction and renovation industry.</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Meticulous Detail</h4>
+                <p class="text-muted">We catch what others miss—from hollow tiles to hidden water seepage.</p>
+              </div>
+              <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                  <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">BCA Standards</h4>
+                <p class="text-muted">Our inspections follow strict BCA CONQUAS guidelines for professional quality.</p>
+              </div>
+            </div>
+            </div>
+    </section>
+    
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Us</h2>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
                 <div class="col-lg-6 text-left">
-                    <h3 class="section-subheading text-muted"></h3>
-                    <p>At Spot-On Inspectorate, we pride ourselves on being your trusted partner in ensuring the safety and quality of your home.</p>
-
-                    <p>With decades of experience in the home renovation industry, working with town council and other relevant fields, we are committed to provide excellent service with integrity for every inspection.</p>
-                    <p>We understand the importance of peace of mind when it comes to your most significant investment, which is why we go above and beyond to provide thorough and reliable assessments.</p>
+                    <h2 class="section-heading">Our Heritage</h2>
+                    <p class="large">Spot-On Inspectorate is more than just a service; we are your advocates in the complex world of home
+                      construction.</p>
+                    <p>With <b>decades of experience</b> in Singapore's home renovation industry, working closely with town councils and
+                      technical bodies, we bring a level of expertise that is unmatched in the field.</p>
+                    <p>We understand that a home is your most significant investment. Our mission is to ensure that every Singaporean
+                      homeowner can move into their property with total confidence, knowing that every tile, pipe, and wire has been
+                      professionally vetted.</p>
                 </div>
-
-                <div class="col-lg-6 text-left"><img class="img-responsive" alt="Decades of experience in home renovation" src="img/about/radac.png"/></div>
-            </div>
-            <div class="row">
-
+                <div class="col-lg-6">
+                  <div class="about-image-wrapper">
+                    <img class="img-responsive img-rounded shadow-lg" alt="RADAC Certified Member" src="img/about/radac.png" />
+                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -359,49 +395,71 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Contact Us</h2>
+                <h2 class="section-heading">Secure Your Appointment</h2>
+                <h3 class="section-subheading text-muted">Fill in the form below or reach out to us via WhatsApp.</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8 contact-form">
-                <iframe data-tally-src="https://tally.so/embed/mVJk5l?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="394" frameborder="0" marginheight="0" marginwidth="0" title="Contact Us"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        <div class="row contact-wrapper">
+          <div class="col-md-7 contact-form-card">
+            <div class="form-intro">
+              <h3>Send us a message</h3>
+              <p>Have questions about your HDB or Condo? Use the form below to get in touch, and our team will get back to you!
+              </p>
             </div>
-            <div class="col-md-4 contact-information">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h5>UEN: 53479502A</h5>
+              <iframe data-tally-src="https://tally.so/embed/mVJk5l?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy" width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0" title="Contact Us"></iframe>
+              <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
+              </div>
+              <div class="col-md-5 contact-details-card">
+                <div class="info-item">
+                  <i class="fa fa-map-marker"></i>
+                  <div>
                         <h4>Address</h4>
-                        <p>Spot-On Inspectorate</p>
-
-                        <p>
-                            60 Paya Lebar Road<br/>
-                            #07-54<br/>
-                            Paya Lebar Square<br/>
-                            Singapore 409051<br/>
-                        </p>
+                        <p>60 Paya Lebar Road, #06-28<br />Paya Lebar Square, Singapore 409051</p>
                     </div>
-
-                    <div class="col-sm-6">
-                        <h4>Email:</h4>
-                        <p><a class="email-link" href="mailto:enquiry@soi.com.sg">enquiry@soi.com.sg</a></p>
-
-                        <h4>Phone:</h4>
+                </div>
+                <div class="info-item">
+                  <i class="fa fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:enquiry@soi.com.sg">enquiry@soi.com.sg</a></p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <i class="fa fa-phone"></i>
+                  <div>
+                    <h4>Phone</h4>
                         <p><a href="tel:+6580812300">+65 8081 2300</a></p>
-
-                        <p>We are on <a href="https://wa.me/6580812300?text=Hello%2C%20I%27m%20interested%20to%20find%20out%20more%21">WhatsApp</a> and <a href="http://t.me/spotoninspectorate">Telegram</a> as well.</p>
                     </div>
-
+                </div>
+                <div class="info-item">
+                  <i class="fa fa-id-card-o"></i>
+                  <div>
+                    <h4>Company Info</h4>
+                    <p>UEN: 53479502A</p>
+                  </div>
+                </div>
+                <div class="social-links-modern">
+                  <a href="https://wa.me/6580812300" target="_blank" class="social-btn whatsapp"><i class="fa fa-whatsapp"></i>
+                    WhatsApp</a>
+                  <a href="http://t.me/spotoninspectorate" target="_blank" class="social-btn telegram"><i class="fa fa-paper-plane"></i>
+                    Telegram</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-      <footer>
+    <a href="https://wa.me/6580812300?text=Hello%2C%20I%27m%20interested%20to%20find%20out%20more%21" class="whatsapp-float"
+      target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
+
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Spot-On Inspectorate 2024</span>
+                    <span class="copyright">Copyright &copy; Spot-On Inspectorate 2026</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">

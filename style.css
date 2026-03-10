@@ -927,7 +927,6 @@ body {
 .panel:checked ~ .panel-content{
   height: auto;
   opacity: 1;
-  padding: 14px;
 }
 
 .plus {

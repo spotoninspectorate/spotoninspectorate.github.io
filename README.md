@@ -1,7 +1,14 @@
-Agency Jekyll theme
+Agency Jekyll theme (Modernized)
 ====================
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+Modernized version for Spot-On Inspectorate (Singapore).
+Based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+
+# Modernization Highlights (2026)
+- **Modern UI/UX:** Clean, professional Navy & Gold palette.
+- **Mobile-First:** Floating WhatsApp CTA for instant booking.
+- **Trust-Focused:** Enhanced "Why Choose Us" and BCA/RADAC compliance sections.
+- **Typography:** Updated to Inter and Public Sans for better readability.
 
 # How to use
 
