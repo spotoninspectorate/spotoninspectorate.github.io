@@ -1,37 +1,43 @@
-Agency Jekyll theme (Modernized)
-====================
+# Astro Starter Kit: Minimal
 
-Modernized version for Spot-On Inspectorate (Singapore).
-Based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+```sh
+npm create astro@latest -- --template minimal
+```
 
-# Modernization Highlights (2026)
-- **Modern UI/UX:** Clean, professional Navy & Gold palette.
-- **Mobile-First:** Floating WhatsApp CTA for instant booking.
-- **Trust-Focused:** Enhanced "Why Choose Us" and BCA/RADAC compliance sections.
-- **Typography:** Updated to Inter and Public Sans for better readability.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-# How to use
+## 🚀 Project Structure
 
-###Portfolio 
+Inside of your Astro project, you'll see the following folders and files:
 
-Portfolio projects are in '/_posts'
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-Images are in '/img/portfolio'
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-###About
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-Images are in '/img/about/'
+Any static assets, like images, can be placed in the `public/` directory.
 
-###Team
+## 🧞 Commands
 
-Team members and info are in '_config.yml'
+All commands are run from the root of the project, from a terminal:
 
-Images are in '/img/team/'
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## 👀 Want to learn more?
 
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

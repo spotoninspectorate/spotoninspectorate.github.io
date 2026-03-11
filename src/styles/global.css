@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a3a5f;
+  --color-secondary: #c5a059;
+  --color-light-bg: #f8f9fa;
+  
+  --font-inter: "Inter", sans-serif;
+  --font-public: "Public Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-inter text-gray-800 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold uppercase;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 lg:py-24;
+  }
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn-gold {
+    @apply bg-secondary text-white px-8 py-4 rounded font-bold uppercase tracking-wider transition-all duration-300 hover:bg-secondary/90 hover:-translate-y-0.5 shadow-md hover:shadow-lg inline-block;
+  }
+}
