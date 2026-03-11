@@ -51,14 +51,15 @@ const faqs = [
     <div class="max-w-3xl mx-auto">
       {faqs.map((faq, index) => (
         <div class="mb-4 rounded-xl shadow-sm border border-gray-100 bg-light-bg overflow-hidden">
-          <input type="checkbox" id={`faq-${index}`} class="hidden peer" />
+          <input type="checkbox" id={`faq-${index}`} class="hidden peer faq-checkbox" />
           <label 
             for={`faq-${index}`} 
             class="relative flex items-center p-5 cursor-pointer text-lg font-semibold text-primary select-none"
           >
-            <span class="text-secondary text-2xl mr-4 transition-transform duration-300 peer-checked:rotate-45">
-              +
-            </span>
+            <div class="relative w-6 h-6 flex items-center justify-center mr-4 shrink-0">
+              <span class="bar-1 absolute w-5 h-0.5 bg-secondary rounded-full transition-transform duration-300"></span>
+              <span class="bar-2 absolute w-5 h-0.5 bg-secondary rounded-full transition-transform duration-300"></span>
+            </div>
             {faq.question}
           </label>
           <div class="max-h-0 peer-checked:max-h-screen overflow-hidden transition-all duration-500 ease-in-out">
@@ -76,3 +77,12 @@ const faqs = [
     </div>
   </div>
 </section>
+
+<style>
+  .faq-checkbox:checked + label .bar-1 {
+    transform: rotate(45deg);
+  }
+  .faq-checkbox:checked + label .bar-2 {
+    transform: rotate(135deg);
+  }
+</style>
