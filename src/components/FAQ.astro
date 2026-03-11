@@ -1,0 +1,78 @@
+---
+const faqs = [
+  {
+    question: "What does your home inspection service cover?",
+    answer: "The defects inspection cover issues ranging from tiles, painting, carpentry, workmanship, electrical, plumbing and more."
+  },
+  {
+    question: "How long does a typical inspection take?",
+    answer: "A typical inspection takes between 1.5 to 3 hours depending on the size of the property and if the unit is furnished."
+  },
+  {
+    question: "Do I need to be present during the inspection?",
+    answer: "It's not necessary for the owner to be present for the initial round of inspection. However, it is encouraged for the owner to be present during the joint inspection with BSC/MA."
+  },
+  {
+    question: "How soon can I expect to receive the inspection report?",
+    answer: "You can expect to receive the inspection report within 2 working days after the inspection is completed."
+  },
+  {
+    question: "Will you help us to submit the defects to BSC/MA for rectification?",
+    answer: "We will compile and submit the reports to the relevant parties for rectification and you will be notified of the progress."
+  },
+  {
+    question: "What is the 'free renovation consultation' that is provided with your packages?",
+    answer: `We know renovation is a tough and mentally tiring process. Therefore for a limited time only, if you book an inspection with us, we include a complimentary 3-month renovation consultation to ease the process and aim to alleviate your headaches.
+              <br/><br/>
+              In this interactive consultation, we will dedicate a platform between you and our staff to answer your questions and concerns with regards to your renovation, things to look out for and offer possible solutions for your home renovation.`
+  },
+  {
+    question: "When should I schedule a defects inspection?",
+    answer: `A defects inspection should typically happen:
+              <ul>
+                  <li>After HDB key collection for BTOs, when BSC is liable for rectification of defects.</li>
+                  <li>After condominium hand over, in which the management should be informed of any defects.</li>
+                  <li>After home renovation by IDs/contractors to check for any workmanship issues.</li>
+                  <li>Before or after renting to a tenant to check for existing defects or any defects that may be caused by the tenant during their stay.</li>
+              </ul>`
+  },
+];
+---
+<section id="faq" class="section-padding bg-white">
+  <div class="container-custom">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-4xl font-black text-primary mb-4">Frequently Asked Questions</h2>
+      <div class="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
+      <p class="text-lg text-gray-600 font-medium leading-relaxed">
+        Find quick answers to common questions about our inspection services.
+      </p>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+      {faqs.map((faq, index) => (
+        <div class="mb-4 rounded-xl shadow-sm border border-gray-100 bg-light-bg overflow-hidden">
+          <input type="checkbox" id={`faq-${index}`} class="hidden peer" />
+          <label 
+            for={`faq-${index}`} 
+            class="relative flex items-center p-5 cursor-pointer text-lg font-semibold text-primary select-none"
+          >
+            <span class="text-secondary text-2xl mr-4 transition-transform duration-300 peer-checked:rotate-45">
+              +
+            </span>
+            {faq.question}
+          </label>
+          <div class="max-h-0 peer-checked:max-h-screen overflow-hidden transition-all duration-500 ease-in-out">
+            <div class="p-5 pt-0 text-gray-700 leading-relaxed" set:html={faq.answer} />
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-12">
+      <h3 class="text-xl text-gray-600 font-medium leading-relaxed">
+        Still have questions? 
+        <a href="#contact" class="text-secondary hover:underline font-semibold">Contact us</a> and we'll be happy to help!
+      </h3>
+    </div>
+  </div>
+</section>

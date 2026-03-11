@@ -1,0 +1,72 @@
+---
+---
+<nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm border-b border-gray-100 transition-all duration-300" id="main-nav">
+  <div class="container-custom py-4 flex justify-between items-center">
+    <a href="/" class="text-2xl font-black tracking-tighter">
+      <span class="text-primary">SPOT-ON</span> <span class="text-secondary">INSPECTORATE</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#services" class="font-semibold text-primary hover:text-secondary transition-colors uppercase text-sm tracking-wider">Services</a>
+      <a href="#why-choose-us" class="font-semibold text-primary hover:text-secondary transition-colors uppercase text-sm tracking-wider">Why Us</a>
+      <a href="#about" class="font-semibold text-primary hover:text-secondary transition-colors uppercase text-sm tracking-wider">About</a>
+      <a href="#faq" class="font-semibold text-primary hover:text-secondary transition-colors uppercase text-sm tracking-wider">FAQ</a>
+      <a href="#contact" class="bg-secondary text-white px-6 py-2.5 rounded font-bold uppercase text-xs tracking-widest hover:bg-secondary/90 transition-all shadow-sm hover:shadow-md">Book Now</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="md:hidden text-primary" id="mobile-menu-btn" aria-label="Toggle Menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden bg-white border-t border-gray-100 py-6" id="mobile-menu">
+    <div class="container-custom flex flex-col gap-4">
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#why-choose-us" class="mobile-link">Why Us</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="#contact" class="bg-secondary text-white text-center py-3 rounded font-bold uppercase tracking-widest">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  @reference "../styles/global.css";
+  .mobile-link {
+    @apply font-semibold text-primary uppercase text-sm tracking-wider py-2 border-b border-gray-50;
+  }
+</style>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  // Sticky effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav?.classList.add('py-1');
+      nav?.classList.remove('py-4');
+    } else {
+      nav?.classList.remove('py-1');
+      nav?.classList.add('py-4');
+    }
+  });
+
+  // Mobile toggle
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+
+  // Close menu on link click
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      menu?.classList.add('hidden');
+    });
+  });
+</script>
