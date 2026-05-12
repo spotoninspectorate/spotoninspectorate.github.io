@@ -6,21 +6,185 @@ interface Props {
 	description?: string;
 }
 
-const { 
+const {
 	title = "Spot-On Inspectorate | HDB Defects Inspection Experts Singapore",
 	description = "Professional house defects inspection in Singapore. We specialize in HDB, Condo, and Post-Renovation inspections. Secure your investment with our 3-trip meticulous assessment."
 } = Astro.props;
+
+const canonicalURL = "https://soi.com.sg/";
+const ogImage = "https://soi.com.sg/img/header-bg.jpg";
+
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "Spot-On Inspectorate",
+	"description": description,
+	"url": canonicalURL,
+	"logo": "https://soi.com.sg/img/logo.png",
+	"image": ogImage,
+	"telephone": "+6580812300",
+	"email": "enquiry@soi.com.sg",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "60 Paya Lebar Road, #06-28, Paya Lebar Square",
+		"addressLocality": "Singapore",
+		"postalCode": "409051",
+		"addressCountry": "SG"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 1.3175,
+		"longitude": 103.8926
+	},
+	"areaServed": {
+		"@type": "Country",
+		"name": "Singapore"
+	},
+	"priceRange": "$$",
+	"currenciesAccepted": "SGD",
+	"paymentAccepted": "Cash, Bank Transfer",
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Home Inspection Services",
+		"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "New Home Defects Inspection",
+					"description": "Pre-renovation inspection to identify defects in newly collected HDB, condo, or executive flats before renovation begins."
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Post Renovation Defects Inspection",
+					"description": "Verify your interior designer delivers quality workmanship and identify defects for rectification."
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Renovation Consultation",
+					"description": "Expert guidance during renovation to help homeowners make informed decisions."
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "HDB WiFi & Networking",
+					"description": "Professional networking and WiFi mesh consultation to overcome dead zones in HDB flats."
+				}
+			}
+		]
+	},
+	"sameAs": [
+		"https://t.me/spotoninspectorate"
+	]
+};
+
+const faqSchema = {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "What does your home inspection service cover?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "The defects inspection covers issues ranging from tiles, painting, carpentry, workmanship, electrical, plumbing and more."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How long does a typical inspection take?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "A typical inspection takes between 1.5 to 3 hours depending on the size of the property and if the unit is furnished."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do I need to be present during the inspection?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "It's not necessary for the owner to be present for the initial round of inspection. However, it is encouraged for the owner to be present during the joint inspection with BSC/MA."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How soon can I expect to receive the inspection report?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "You can expect to receive the inspection report within 2 working days after the inspection is completed."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Will you help us to submit the defects to BSC/MA for rectification?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We will compile and submit the reports to the relevant parties for rectification and you will be notified of the progress."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "When should I schedule a defects inspection?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "A defects inspection should typically happen after HDB key collection for BTOs, after condominium handover, after home renovation by IDs/contractors, or before/after renting to a tenant."
+			}
+		}
+	]
+};
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href={canonicalURL} />
 		<link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<!-- Primary Meta -->
 		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content="HDB defects inspection Singapore, home inspection Singapore, BTO inspection, condo defects inspection, post renovation inspection, Spot-On Inspectorate" />
+		<meta name="author" content="Spot-On Inspectorate" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="en_SG" />
+		<meta property="og:site_name" content="Spot-On Inspectorate" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+
+		<!-- AI / LLM discovery -->
+		<link rel="llms" href="/llms.txt" type="text/plain" />
+		<link rel="agents" href="/agents.md" type="text/markdown" />
+
+		<!-- Sitemap -->
+		<link rel="sitemap" href="/sitemap.xml" />
+
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+		<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
