@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://soi.com.sg/sitemap.xml
+
+# AI training crawlers — allowed to index content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
